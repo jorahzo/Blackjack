@@ -14,7 +14,7 @@
 class Card{
 public:
 // Setters
-    Card(std::string s, int v){suit = s; value = v;}
+    Card(std::string s, int r){suit = s; rank = r;}
     void setSuit(std::string s);
     void setValue(int v);
 // Getters
@@ -22,6 +22,7 @@ public:
     int getValue();
 private:
     std::string suit = "";
+    int rank;
     int value;
 };
 

@@ -7,6 +7,7 @@
 
 #include <iostream>
 #include "card.hpp"
+#include "deck.cpp"
 
 int main() {
 }

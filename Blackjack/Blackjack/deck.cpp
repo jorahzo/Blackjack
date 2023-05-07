@@ -45,3 +45,9 @@ void Deck::randomizeDeck(){
     auto rng = std::default_random_engine {};
     std::shuffle(std::begin(deck), std::end(deck), rng);
 }
+
+int Deck::drawCard(){
+    Card drawnCard = deck.back();
+    deck.pop_back();
+    return drawnCard.getValue();
+}

@@ -16,6 +16,7 @@ class Deck{
 public:
     Deck();
     void randomizeDeck();
+    int drawCard();
 private:
     std::vector<Card> deck;
 };
